@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.gallery3d.util;
+package com.android.gallery42.util;
 
 import android.util.Log;
 

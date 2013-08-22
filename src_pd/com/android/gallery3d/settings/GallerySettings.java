@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.gallery3d.settings;
+package com.android.gallery42.settings;
 
 import android.preference.PreferenceActivity;
 

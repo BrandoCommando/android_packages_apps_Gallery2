@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.gallery3d.common;
+package com.android.gallery42.common;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

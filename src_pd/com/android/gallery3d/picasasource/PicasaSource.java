@@ -14,21 +14,21 @@
  * limitations under the License.
  */
 
-package com.android.gallery3d.picasasource;
+package com.android.gallery42.picasasource;
 
 import android.app.Activity;
 import android.app.Dialog;
 import android.content.Context;
 import android.os.ParcelFileDescriptor;
 
-import com.android.gallery3d.app.GalleryApp;
-import com.android.gallery3d.data.MediaItem;
-import com.android.gallery3d.data.MediaObject;
-import com.android.gallery3d.data.MediaSet;
-import com.android.gallery3d.data.MediaSource;
-import com.android.gallery3d.data.Path;
-import com.android.gallery3d.data.PathMatcher;
-import com.android.gallery3d.exif.ExifData;
+import com.android.gallery42.app.GalleryApp;
+import com.android.gallery42.data.MediaItem;
+import com.android.gallery42.data.MediaObject;
+import com.android.gallery42.data.MediaSet;
+import com.android.gallery42.data.MediaSource;
+import com.android.gallery42.data.Path;
+import com.android.gallery42.data.PathMatcher;
+import com.android.gallery42.exif.ExifData;
 
 import java.io.FileNotFoundException;
 

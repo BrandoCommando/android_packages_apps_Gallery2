@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.gallery3d.util;
+package com.android.gallery42.util;
 
 // This Future differs from the java.util.concurrent.Future in these aspects:
 //

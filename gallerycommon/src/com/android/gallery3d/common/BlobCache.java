@@ -63,7 +63,7 @@
 // public void syncAll();
 // public static void deleteFiles(String path);
 //
-package com.android.gallery3d.common;
+package com.android.gallery42.common;
 
 import android.util.Log;
 

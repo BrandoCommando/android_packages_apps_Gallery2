@@ -3,13 +3,13 @@
 <manifest android:versionCode="40001"
         android:versionName="1.1.40001"
         xmlns:android="http://schemas.android.com/apk/res/android"
-        package="com.android.gallery3d">
+        package="com.android.gallery42">
 
-    <original-package android:name="com.android.gallery3d" />
+    <original-package android:name="com.android.gallery42" />
 
     <uses-sdk android:minSdkVersion="10" android:targetSdkVersion="16" />
 
-    <permission android:name="com.android.gallery3d.permission.GALLERY_PROVIDER"
+    <permission android:name="com.android.gallery42.permission.GALLERY_PROVIDER"
             android:protectionLevel="signatureOrSystem" />
 
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
@@ -38,13 +38,13 @@
             android:anyDensity="true" />
 
     <application android:icon="@mipmap/ic_launcher_gallery" android:label="@string/app_name"
-            android:name="com.android.gallery3d.app.GalleryAppImpl"
+            android:name="com.android.gallery42.app.GalleryAppImpl"
             android:theme="@style/Theme.Gallery"
             android:logo="@mipmap/ic_launcher_gallery"
             android:hardwareAccelerated="true"
             android:largeHeap="true">
         <uses-library android:name="com.google.android.media.effects" android:required="false" />
-        <activity android:name="com.android.gallery3d.app.MovieActivity"
+        <activity android:name="com.android.gallery42.app.MovieActivity"
                 android:label="@string/movie_view_label"
                 android:configChanges="orientation|keyboardHidden|screenSize">
             <intent-filter>
@@ -84,7 +84,7 @@
              </intent-filter>
         </activity>
 
-        <activity android:name="com.android.gallery3d.app.Gallery" android:label="@string/app_name"
+        <activity android:name="com.android.gallery42.app.Gallery" android:label="@string/app_name"
                 android:configChanges="keyboardHidden|orientation|screenSize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -162,7 +162,7 @@
         <!-- we add this activity-alias for shortcut backward compatibility -->
         <!-- Note: The alias must put after the target activity -->
         <activity-alias android:name="com.cooliris.media.Gallery"
-                android:targetActivity="com.android.gallery3d.app.Gallery"
+                android:targetActivity="com.android.gallery42.app.Gallery"
                 android:configChanges="keyboardHidden|orientation|screenSize"
                 android:label="@string/app_name">
             <intent-filter>
@@ -171,7 +171,7 @@
         </activity-alias>
 
         <!-- This activity receives USB_DEVICE_ATTACHED Intents and springboards to main Gallery activity. -->
-        <activity android:name="com.android.gallery3d.app.UsbDeviceActivity" android:label="@string/app_name"
+        <activity android:name="com.android.gallery42.app.UsbDeviceActivity" android:label="@string/app_name"
                 android:taskAffinity=""
                 android:launchMode="singleInstance">
             <intent-filter>
@@ -181,7 +181,7 @@
                 android:resource="@xml/device_filter" />
         </activity>
 
-        <activity android:name="com.android.gallery3d.app.Wallpaper"
+        <activity android:name="com.android.gallery42.app.Wallpaper"
                 android:configChanges="keyboardHidden|orientation|screenSize"
                 android:theme="@style/android:Theme.Translucent.NoTitleBar">
             <intent-filter android:label="@string/camera_setas_wallpaper">
@@ -196,7 +196,7 @@
             <meta-data android:name="android.wallpaper.preview"
                     android:resource="@xml/wallpaper_picker_preview" />
         </activity>
-        <activity android:name="com.android.gallery3d.app.CropImage"
+        <activity android:name="com.android.gallery42.app.CropImage"
                 android:configChanges="keyboardHidden|orientation|screenSize"
                 android:label="@string/crop_label"
                 android:process=":crop">
@@ -213,24 +213,24 @@
                 <category android:name="android.intent.category.SELECTED_ALTERNATIVE" />
             </intent-filter>
         </activity>
-        <activity android:name="com.android.gallery3d.app.TrimVideo"
+        <activity android:name="com.android.gallery42.app.TrimVideo"
                 android:label="@string/trim_label">
         </activity>
 
-        <permission android:name="com.android.gallery3d.filtershow.permission.READ"
+        <permission android:name="com.android.gallery42.filtershow.permission.READ"
                     android:protectionLevel="signature" />
 
-        <permission android:name="com.android.gallery3d.filtershow.permission.WRITE"
+        <permission android:name="com.android.gallery42.filtershow.permission.WRITE"
                     android:protectionLevel="signature" />
 
         <provider
-            android:name="com.android.gallery3d.filtershow.provider.SharedImageProvider"
-            android:authorities="com.android.gallery3d.filtershow.provider.SharedImageProvider"
+            android:name="com.android.gallery42.filtershow.provider.SharedImageProvider"
+            android:authorities="com.android.gallery42.filtershow.provider.SharedImageProvider"
             android:grantUriPermissions="true"
-            android:readPermission="com.android.gallery3d.filtershow.permission.READ"
-            android:writePermission="com.android.gallery3d.filtershow.permission.WRITE" />
+            android:readPermission="com.android.gallery42.filtershow.permission.READ"
+            android:writePermission="com.android.gallery42.filtershow.permission.WRITE" />
         <activity
-            android:name="com.android.gallery3d.filtershow.FilterShowActivity"
+            android:name="com.android.gallery42.filtershow.FilterShowActivity"
             android:label="@string/title_activity_filter_show"
             android:theme="@style/Theme.FilterShow"
             android:configChanges="keyboardHidden|orientation|screenSize">
@@ -261,24 +261,24 @@
         <uses-library android:name="com.google.android.media.effects"
                 android:required="false" />
 
-        <activity android:name="com.android.gallery3d.settings.GallerySettings"
+        <activity android:name="com.android.gallery42.settings.GallerySettings"
                 android:theme="@style/Theme.Gallery"
                 android:configChanges="orientation|keyboardHidden|screenSize" />
 
-        <provider android:name="com.android.gallery3d.provider.GalleryProvider"
+        <provider android:name="com.android.gallery42.provider.GalleryProvider"
                 android:syncable="false"
                 android:grantUriPermissions="true"
                 android:exported="true"
-                android:permission="com.android.gallery3d.permission.GALLERY_PROVIDER"
-                android:authorities="com.android.gallery3d.provider" />
-        <activity android:name="com.android.gallery3d.gadget.WidgetClickHandler" />
-        <activity android:name="com.android.gallery3d.app.DialogPicker"
+                android:permission="com.android.gallery42.permission.GALLERY_PROVIDER"
+                android:authorities="com.android.gallery42.provider" />
+        <activity android:name="com.android.gallery42.gadget.WidgetClickHandler" />
+        <activity android:name="com.android.gallery42.app.DialogPicker"
                 android:configChanges="keyboardHidden|orientation|screenSize"
                 android:theme="@style/DialogPickerTheme"/>
-        <activity android:name="com.android.gallery3d.app.AlbumPicker"
+        <activity android:name="com.android.gallery42.app.AlbumPicker"
                 android:configChanges="keyboardHidden|orientation|screenSize"
                 android:theme="@style/DialogPickerTheme"/>
-        <activity android:name="com.android.gallery3d.gadget.WidgetTypeChooser"
+        <activity android:name="com.android.gallery42.gadget.WidgetTypeChooser"
                 android:configChanges="keyboardHidden|orientation|screenSize"
                 android:theme="@style/Theme.Gallery.Dialog"/>
 
@@ -358,7 +358,7 @@
             </intent-filter>
         </activity-alias>
 
-        <receiver android:name="com.android.gallery3d.gadget.PhotoAppWidgetProvider"
+        <receiver android:name="com.android.gallery42.gadget.PhotoAppWidgetProvider"
                 android:label="@string/appwidget_title">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
@@ -366,7 +366,7 @@
             <meta-data android:name="android.appwidget.provider"
                     android:resource="@xml/widget_info" />
         </receiver>
-        <receiver android:name="com.android.gallery3d.app.PackagesMonitor">
+        <receiver android:name="com.android.gallery42.app.PackagesMonitor">
             <intent-filter>
                 <action android:name="android.intent.action.PACKAGE_ADDED"/>
                 <action android:name="android.intent.action.PACKAGE_REMOVED"/>
@@ -374,7 +374,7 @@
                 <data android:scheme="package"/>
             </intent-filter>
         </receiver>
-        <service android:name="com.android.gallery3d.app.PackagesMonitor$AsyncService"/>
+        <service android:name="com.android.gallery42.app.PackagesMonitor$AsyncService"/>
         <receiver android:name="com.android.camera.CameraButtonIntentReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.CAMERA_BUTTON"/>
@@ -385,9 +385,9 @@
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
-        <service android:name="com.android.gallery3d.gadget.WidgetService"
+        <service android:name="com.android.gallery42.gadget.WidgetService"
                 android:permission="android.permission.BIND_REMOTEVIEWS"/>
-        <activity android:name="com.android.gallery3d.gadget.WidgetConfigure"
+        <activity android:name="com.android.gallery42.gadget.WidgetConfigure"
                 android:configChanges="keyboardHidden|orientation|screenSize"
                 android:theme="@style/android:Theme.Translucent.NoTitleBar">
             <intent-filter>

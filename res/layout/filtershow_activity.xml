@@ -59,55 +59,55 @@
             android:layout_height="wrap_content"
             android:layout_weight="1" >
 
-            <com.android.gallery3d.filtershow.imageshow.ImageShow
+            <com.android.gallery42.filtershow.imageshow.ImageShow
                 android:id="@+id/imageShow"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
-            <com.android.gallery3d.filtershow.imageshow.ImageStraighten
+            <com.android.gallery42.filtershow.imageshow.ImageStraighten
                 android:id="@+id/imageStraighten"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:visibility="gone" />
 
-            <com.android.gallery3d.filtershow.imageshow.ImageCrop
+            <com.android.gallery42.filtershow.imageshow.ImageCrop
                 android:id="@+id/imageCrop"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:visibility="gone" />
 
-            <com.android.gallery3d.filtershow.imageshow.ImageRotate
+            <com.android.gallery42.filtershow.imageshow.ImageRotate
                 android:id="@+id/imageRotate"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:visibility="gone" />
 
-            <com.android.gallery3d.filtershow.imageshow.ImageFlip
+            <com.android.gallery42.filtershow.imageshow.ImageFlip
                 android:id="@+id/imageFlip"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:visibility="gone" />
 
-            <com.android.gallery3d.filtershow.ui.ImageCurves
+            <com.android.gallery42.filtershow.ui.ImageCurves
                 android:id="@+id/imageCurves"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layerType="software"
                 android:visibility="gone" />
 
-            <com.android.gallery3d.filtershow.imageshow.ImageBorder
+            <com.android.gallery42.filtershow.imageshow.ImageBorder
                 android:id="@+id/imageBorder"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:visibility="gone" />
 
-            <com.android.gallery3d.filtershow.imageshow.ImageZoom
+            <com.android.gallery42.filtershow.imageshow.ImageZoom
                 android:id="@+id/imageZoom"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:visibility="gone" />
 
-            <com.android.gallery3d.filtershow.imageshow.ImageTinyPlanet
+            <com.android.gallery42.filtershow.imageshow.ImageTinyPlanet
                 android:id="@+id/imageTinyPlanet"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
@@ -122,8 +122,8 @@
                 android:src="@drawable/filtershow_button_show_original" />
                  -->
 
-            <com.android.gallery3d.filtershow.CenteredLinearLayout
-              xmlns:custom="http://schemas.android.com/apk/res/com.android.gallery3d"
+            <com.android.gallery42.filtershow.CenteredLinearLayout
+              xmlns:custom="http://schemas.android.com/apk/res/com.android.gallery42"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
               android:layout_gravity="center_horizontal|bottom"
@@ -139,7 +139,7 @@
                   android:padding="16dip"
                   android:visibility="gone" />
 
-            </com.android.gallery3d.filtershow.CenteredLinearLayout>
+            </com.android.gallery42.filtershow.CenteredLinearLayout>
 
             <ProgressBar
                 android:id="@+id/loading"
@@ -153,8 +153,8 @@
 
         </FrameLayout>
 
-        <com.android.gallery3d.filtershow.CenteredLinearLayout
-              xmlns:custom="http://schemas.android.com/apk/res/com.android.gallery3d"
+        <com.android.gallery42.filtershow.CenteredLinearLayout
+              xmlns:custom="http://schemas.android.com/apk/res/com.android.gallery42"
               android:id="@+id/filtersPanel"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
@@ -179,7 +179,7 @@
                 <FrameLayout
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent" >
-                    <com.android.gallery3d.filtershow.ui.FramedTextButton
+                    <com.android.gallery42.filtershow.ui.FramedTextButton
                         android:id="@+id/aspect"
                         android:layout_width="84dip"
                         android:layout_height="84dip"
@@ -189,7 +189,7 @@
                         android:visibility="gone"
                         android:text="@string/aspectNone_effect" />
 
-                    <com.android.gallery3d.filtershow.ui.FramedTextButton
+                    <com.android.gallery42.filtershow.ui.FramedTextButton
                         android:id="@+id/pickCurvesChannel"
                         android:layout_width="84dip"
                         android:layout_height="84dip"
@@ -259,31 +259,31 @@
                     android:layout_gravity="center"
                     android:orientation="horizontal">
 
-                    <com.android.gallery3d.filtershow.ui.ImageButtonTitle
+                    <com.android.gallery42.filtershow.ui.ImageButtonTitle
                         android:id="@+id/straightenButton"
                         style="@style/FilterShowBottomButton"
                         android:src="@drawable/filtershow_button_geometry_straighten"
                         android:text="@string/straighten" />
 
-                    <com.android.gallery3d.filtershow.ui.ImageButtonTitle
+                    <com.android.gallery42.filtershow.ui.ImageButtonTitle
                         android:id="@+id/cropButton"
                         style="@style/FilterShowBottomButton"
                         android:src="@drawable/filtershow_button_geometry_crop"
                         android:text="@string/crop" />
 
-                    <com.android.gallery3d.filtershow.ui.ImageButtonTitle
+                    <com.android.gallery42.filtershow.ui.ImageButtonTitle
                         android:id="@+id/rotateButton"
                         style="@style/FilterShowBottomButton"
                         android:src="@drawable/filtershow_button_geometry_rotate"
                         android:text="@string/rotate" />
 
-                    <com.android.gallery3d.filtershow.ui.ImageButtonTitle
+                    <com.android.gallery42.filtershow.ui.ImageButtonTitle
                         android:id="@+id/flipButton"
                         style="@style/FilterShowBottomButton"
                         android:src="@drawable/filtershow_button_geometry_flip"
                         android:text="@string/mirror" />
 
-                    <com.android.gallery3d.filtershow.ui.ImageButtonTitle
+                    <com.android.gallery42.filtershow.ui.ImageButtonTitle
                         android:id="@+id/redEyeButton"
                         style="@style/FilterShowBottomButton"
                         android:src="@drawable/photoeditor_effect_redeye"
@@ -307,73 +307,73 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/thumbnail_margin"
                     android:orientation="horizontal" >
-                    <com.android.gallery3d.filtershow.ui.ImageButtonTitle
+                    <com.android.gallery42.filtershow.ui.ImageButtonTitle
                         android:id="@+id/tinyplanetButton"
                         style="@style/FilterShowBottomButton"
                         android:src="@drawable/filtershow_button_colors_contrast"
                         android:text="@string/tinyplanet" />
 
-                    <com.android.gallery3d.filtershow.ui.ImageButtonTitle
+                    <com.android.gallery42.filtershow.ui.ImageButtonTitle
                         android:id="@+id/wbalanceButton"
                         style="@style/FilterShowBottomButton"
                         android:src="@drawable/filtershow_button_colors_contrast"
                         android:text="@string/wbalance" />
 
-                    <com.android.gallery3d.filtershow.ui.ImageButtonTitle
+                    <com.android.gallery42.filtershow.ui.ImageButtonTitle
                         android:id="@+id/exposureButton"
                         style="@style/FilterShowBottomButton"
                         android:src="@drawable/filtershow_button_colors_contrast"
                         android:text="@string/exposure" />
 
-                    <com.android.gallery3d.filtershow.ui.ImageButtonTitle
+                    <com.android.gallery42.filtershow.ui.ImageButtonTitle
                         android:id="@+id/vignetteButton"
                         style="@style/FilterShowBottomButton"
                         android:src="@drawable/filtershow_button_colors_vignette"
                         android:text="@string/vignette" />
 
-                    <com.android.gallery3d.filtershow.ui.ImageButtonTitle
+                    <com.android.gallery42.filtershow.ui.ImageButtonTitle
                         android:id="@+id/contrastButton"
                         style="@style/FilterShowBottomButton"
                         android:src="@drawable/filtershow_button_colors_contrast"
                         android:text="@string/contrast" />
 
-                    <com.android.gallery3d.filtershow.ui.ImageButtonTitle
+                    <com.android.gallery42.filtershow.ui.ImageButtonTitle
                         android:id="@+id/shadowRecoveryButton"
                         style="@style/FilterShowBottomButton"
                         android:src="@drawable/filtershow_button_colors_contrast"
                         android:text="@string/shadow_recovery" />
 
-                    <com.android.gallery3d.filtershow.ui.ImageButtonTitle
+                    <com.android.gallery42.filtershow.ui.ImageButtonTitle
                         android:id="@+id/vibranceButton"
                         style="@style/FilterShowBottomButton"
                         android:src="@drawable/filtershow_button_colors_contrast"
                         android:text="@string/vibrance" />
 
-                    <com.android.gallery3d.filtershow.ui.ImageButtonTitle
+                    <com.android.gallery42.filtershow.ui.ImageButtonTitle
                         android:id="@+id/sharpenButton"
                         style="@style/FilterShowBottomButton"
                         android:src="@drawable/filtershow_button_colors_sharpen"
                         android:text="@string/sharpness" />
 
-                    <com.android.gallery3d.filtershow.ui.ImageButtonTitle
+                    <com.android.gallery42.filtershow.ui.ImageButtonTitle
                         android:id="@+id/curvesButtonRGB"
                         style="@style/FilterShowBottomButton"
                         android:src="@drawable/filtershow_button_colors_curve"
                         android:text="@string/curvesRGB" />
 
-                    <com.android.gallery3d.filtershow.ui.ImageButtonTitle
+                    <com.android.gallery42.filtershow.ui.ImageButtonTitle
                         android:id="@+id/hueButton"
                         style="@style/FilterShowBottomButton"
                         android:src="@drawable/filtershow_button_colors_contrast"
                         android:text="@string/hue" />
 
-                    <com.android.gallery3d.filtershow.ui.ImageButtonTitle
+                    <com.android.gallery42.filtershow.ui.ImageButtonTitle
                         android:id="@+id/saturationButton"
                         style="@style/FilterShowBottomButton"
                         android:src="@drawable/filtershow_button_colors_contrast"
                         android:text="@string/saturation" />
 
-                    <com.android.gallery3d.filtershow.ui.ImageButtonTitle
+                    <com.android.gallery42.filtershow.ui.ImageButtonTitle
                         android:id="@+id/bwfilterButton"
                         style="@style/FilterShowBottomButton"
                         android:src="@drawable/filtershow_button_colors_contrast"
@@ -388,8 +388,8 @@
             android:layout_height="1dip"
             android:layout_width="match_parent" />
 
-        <com.android.gallery3d.filtershow.CenteredLinearLayout
-              xmlns:custom="http://schemas.android.com/apk/res/com.android.gallery3d"
+        <com.android.gallery42.filtershow.CenteredLinearLayout
+              xmlns:custom="http://schemas.android.com/apk/res/com.android.gallery42"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
               android:layout_gravity="center"
@@ -441,9 +441,9 @@
                 android:src="@drawable/ic_photoeditor_color" />
         </LinearLayout>
 
-        </com.android.gallery3d.filtershow.CenteredLinearLayout>
+        </com.android.gallery42.filtershow.CenteredLinearLayout>
 
-        </com.android.gallery3d.filtershow.CenteredLinearLayout>
+        </com.android.gallery42.filtershow.CenteredLinearLayout>
     </LinearLayout>
 
     <LinearLayout

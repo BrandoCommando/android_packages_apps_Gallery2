@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.gallery3d.app;
+package com.android.gallery42.app;
 
 import android.net.Uri;
 

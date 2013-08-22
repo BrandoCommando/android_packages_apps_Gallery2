@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.android.gallery3d.exif;
+package com.android.gallery42.exif;
 
 public interface IfdId {
     public static final int TYPE_IFD_0 = 0;

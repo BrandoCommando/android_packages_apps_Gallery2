@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.gallery3d.common;
+package com.android.gallery42.common;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -23,7 +23,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
-import com.android.gallery3d.common.Entry.Table;
+import com.android.gallery42.common.Entry.Table;
 
 import java.io.Closeable;
 import java.io.File;

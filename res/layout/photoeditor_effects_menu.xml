@@ -23,22 +23,22 @@
         android:id="@+id/toggles"
         style="@style/EffectsMenuContainer">
 
-        <com.android.gallery3d.photoeditor.ImageActionButton
+        <com.android.gallery42.photoeditor.ImageActionButton
             android:id="@+id/exposure_button"
             style="@style/EffectsMenuActionButton"
             android:src="@drawable/photoeditor_exposure"
             android:contentDescription="@string/photoeditor_exposure"/>
-        <com.android.gallery3d.photoeditor.ImageActionButton
+        <com.android.gallery42.photoeditor.ImageActionButton
             android:id="@+id/artistic_button"
             style="@style/EffectsMenuActionButton"
             android:src="@drawable/photoeditor_artistic"
             android:contentDescription="@string/photoeditor_artistic"/>
-        <com.android.gallery3d.photoeditor.ImageActionButton
+        <com.android.gallery42.photoeditor.ImageActionButton
             android:id="@+id/color_button"
             style="@style/EffectsMenuActionButton"
             android:src="@drawable/photoeditor_color"
             android:contentDescription="@string/photoeditor_color"/>
-        <com.android.gallery3d.photoeditor.ImageActionButton
+        <com.android.gallery42.photoeditor.ImageActionButton
             android:id="@+id/fix_button"
             style="@style/EffectsMenuActionButton"
             android:src="@drawable/photoeditor_fix"
