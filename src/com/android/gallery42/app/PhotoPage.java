@@ -37,8 +37,8 @@ import android.view.MenuItem;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
-import com.android.camera.CameraActivity;
-import com.android.camera.ProxyLauncher;
+import com.android.cam42.CameraActivity;
+import com.android.cam42.ProxyLauncher;
 import com.android.gallery42.R;
 import com.android.gallery42.common.ApiHelper;
 import com.android.gallery42.data.ComboAlbum;

@@ -14,7 +14,7 @@ LOCAL_SRC_FILES += $(call all-java-files-under, src_pd)
 LOCAL_SRC_FILES += $(call all-java-files-under, ../LegacyCamera/src)
 
 LOCAL_RESOURCE_DIR += $(LOCAL_PATH)/res packages/apps/LegacyCamera/res
-LOCAL_AAPT_FLAGS := --auto-add-overlay --extra-packages com.android.camera
+LOCAL_AAPT_FLAGS := --auto-add-overlay --extra-packages com.android.cam42
 
 LOCAL_PACKAGE_NAME := Gallery2
 
@@ -60,7 +60,7 @@ LOCAL_RESOURCE_DIR += $(LOCAL_PATH)/res
 LOCAL_RESOURCE_DIR += packages/apps/Camera/res
 
 LOCAL_AAPT_FLAGS := --auto-add-overlay \
-    --extra-packages com.android.camera
+    --extra-packages com.android.cam42
 
 LOCAL_PACKAGE_NAME := Gallery2
 

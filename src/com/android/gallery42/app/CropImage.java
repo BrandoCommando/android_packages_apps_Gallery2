@@ -46,7 +46,7 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Toast;
 
-import com.android.camera.Util;
+import com.android.cam42.Util;
 import com.android.gallery42.R;
 import com.android.gallery42.common.ApiHelper;
 import com.android.gallery42.common.BitmapUtils;
@@ -91,7 +91,7 @@ import java.util.Date;
  */
 public class CropImage extends AbstractGalleryActivity {
     private static final String TAG = "CropImage";
-    public static final String ACTION_CROP = "com.android.camera.action.CROP";
+    public static final String ACTION_CROP = "com.android.cam42.action.CROP";
 
     private static final int MAX_PIXEL_COUNT = 5 * 1000000; // 5M pixels
     private static final int MAX_FILE_INDEX = 1000;
@@ -133,7 +133,7 @@ public class CropImage extends AbstractGalleryActivity {
     public static final File DOWNLOAD_BUCKET = new File(
             Environment.getExternalStorageDirectory(), BucketNames.DOWNLOAD);
 
-    public static final String CROP_ACTION = "com.android.camera.action.CROP";
+    public static final String CROP_ACTION = "com.android.cam42.action.CROP";
 
     private int mState = STATE_INIT;
 

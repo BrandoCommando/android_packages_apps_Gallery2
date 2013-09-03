@@ -49,7 +49,7 @@ public class GalleryAppImpl extends Application implements GalleryApp {
     @Override
     public void onCreate() {
         super.onCreate();
-        com.android.camera.Util.initialize(this);
+        com.android.cam42.Util.initialize(this);
         initializeAsyncTask();
         GalleryUtils.initialize(this);
         WidgetUtils.initialize(this);

@@ -21,7 +21,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 
-import com.android.camera.CameraModule;
+import com.android.cam42.CameraModule;
 import com.android.gallery42.app.GalleryApp;
 import com.android.gallery42.app.StitchingProgressManager;
 

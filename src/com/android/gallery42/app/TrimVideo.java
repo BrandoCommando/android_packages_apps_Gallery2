@@ -57,7 +57,7 @@ public class TrimVideo extends Activity implements
     private Context mContext;
     private Uri mUri;
     private final Handler mHandler = new Handler();
-    public static final String TRIM_ACTION = "com.android.camera.action.TRIM";
+    public static final String TRIM_ACTION = "com.android.cam42.action.TRIM";
 
     public ProgressDialog mProgress;
 

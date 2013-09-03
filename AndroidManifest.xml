@@ -112,7 +112,7 @@
             </intent-filter>
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
-                <action android:name="com.android.camera.action.REVIEW" />
+                <action android:name="com.android.cam42.action.REVIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
                 <data android:scheme="" />
@@ -129,7 +129,7 @@
                 <data android:mimeType="application/vnd.google.panorama360+jpg" />
             </intent-filter>
             <intent-filter>
-                <action android:name="com.android.camera.action.REVIEW" />
+                <action android:name="com.android.cam42.action.REVIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
                 <data android:scheme="http" />
@@ -201,7 +201,7 @@
                 android:label="@string/crop_label"
                 android:process=":crop">
             <intent-filter android:label="@string/crop_label">
-                <action android:name="com.android.camera.action.CROP" />
+                <action android:name="com.android.cam42.action.CROP" />
                 <data android:scheme="http" />
                 <data android:scheme="https" />
                 <data android:scheme="content" />
@@ -245,7 +245,7 @@
                 <data android:mimeType="image/*" />
             </intent-filter>
             <intent-filter android:label="@string/crop_label">
-                <action android:name="com.android.camera.action.EDITOR_CROP" />
+                <action android:name="com.android.cam42.action.EDITOR_CROP" />
                 <data android:scheme="http" />
                 <data android:scheme="https" />
                 <data android:scheme="content" />
@@ -282,8 +282,8 @@
                 android:configChanges="keyboardHidden|orientation|screenSize"
                 android:theme="@style/Theme.Gallery.Dialog"/>
 
-        <activity android:name="com.android.camera.CameraActivity"
-                android:taskAffinity="com.android.camera.CameraActivity"
+        <activity android:name="com.android.cam42.CameraActivity"
+                android:taskAffinity="com.android.cam42.CameraActivity"
                 android:label="@string/camera_label"
                 android:theme="@style/Theme.Camera"
                 android:icon="@mipmap/ic_launcher_camera"
@@ -302,8 +302,8 @@
                     android:resource="@layout/keyguard_widget" />
         </activity>
 
-        <activity android:name="com.android.camera.SecureCameraActivity"
-                android:taskAffinity="com.android.camera.SecureCameraActivity"
+        <activity android:name="com.android.cam42.SecureCameraActivity"
+                android:taskAffinity="com.android.cam42.SecureCameraActivity"
                 android:excludeFromRecents="true"
                 android:label="@string/camera_label"
                 android:theme="@style/Theme.CameraSecure"
@@ -325,8 +325,8 @@
 
         <activity-alias android:icon="@mipmap/ic_launcher_camera"
                         android:label="@string/camera_label"
-                        android:name="com.android.camera.CameraLauncher"
-                        android:targetActivity="com.android.camera.CameraActivity" >
+                        android:name="com.android.cam42.CameraLauncher"
+                        android:targetActivity="com.android.cam42.CameraActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -336,8 +336,8 @@
 
         <activity-alias android:icon="@mipmap/ic_launcher_camera"
                         android:label="@string/camera_label"
-                        android:name="com.android.camera.Camera"
-                        android:targetActivity="com.android.camera.CameraActivity" >
+                        android:name="com.android.cam42.Camera"
+                        android:targetActivity="com.android.cam42.CameraActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -346,8 +346,8 @@
 
         <activity-alias android:icon="@mipmap/ic_launcher_video_camera"
                 android:label="@string/video_camera_label"
-                android:name="com.android.camera.VideoCamera"
-                android:targetActivity="com.android.camera.CameraActivity" >
+                android:name="com.android.cam42.VideoCamera"
+                android:targetActivity="com.android.cam42.CameraActivity" >
             <intent-filter>
                 <action android:name="android.media.action.VIDEO_CAMERA" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -375,12 +375,12 @@
             </intent-filter>
         </receiver>
         <service android:name="com.android.gallery42.app.PackagesMonitor$AsyncService"/>
-        <receiver android:name="com.android.camera.CameraButtonIntentReceiver">
+        <receiver android:name="com.android.cam42.CameraButtonIntentReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.CAMERA_BUTTON"/>
             </intent-filter>
         </receiver>
-        <receiver android:name="com.android.camera.DisableCameraReceiver">
+        <receiver android:name="com.android.cam42.DisableCameraReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
@@ -394,7 +394,7 @@
                 <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
             </intent-filter>
         </activity>
-        <activity android:name="com.android.camera.ProxyLauncher"
+        <activity android:name="com.android.cam42.ProxyLauncher"
                 android:theme="@style/Theme.ProxyLauncher">
         </activity>
     </application>

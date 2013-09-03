@@ -44,7 +44,7 @@ public final class Gallery extends AbstractGalleryActivity implements OnCancelLi
     public static final String EXTRA_DREAM = "dream";
     public static final String EXTRA_CROP = "crop";
 
-    public static final String ACTION_REVIEW = "com.android.camera.action.REVIEW";
+    public static final String ACTION_REVIEW = "com.android.cam42.action.REVIEW";
     public static final String KEY_GET_CONTENT = "get-content";
     public static final String KEY_GET_ALBUM = "get-album";
     public static final String KEY_TYPE_BITS = "type-bits";
